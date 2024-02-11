@@ -1,9 +1,13 @@
 (Note: This project is still under development)
+### No machine learning algorithms are used. 
+
+
+
 
 
 # OG
 ### This is my python learning project.
-### No machine learning algorithms are used. 
+
 ### This is a basic chat bot developed using python. Only worked on terminal with limited inputs. Embedded with speech recognisation system--> google speech engine.
 
 #### *open youtube.com

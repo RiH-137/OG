@@ -5,6 +5,8 @@ import wikipedia #pip install wikipedia
 import webbrowser
 import os
 import smtplib
+import sys
+
 #pip install pyaudio
 
 
@@ -61,6 +63,10 @@ def sendEmail(to, content):
     server.login('101rishidsr@gmail.com', '*******')
     server.sendmail('101rishidsr@gmail.com', to, content)
     server.close()
+
+def exit():
+    sys.exit()
+
 
 if __name__ == "__main__":
     wishMe()
@@ -119,4 +125,8 @@ if __name__ == "__main__":
                 speak("Email has been sent!")
             except Exception as e:
                 print(e)
-                speak("There is an error while sending mail... I am Sorry!")    
+                speak("There is an error while sending mail... I am Sorry!") 
+        elif 'exit' in query:
+            print("Exiting the program as requested.")
+
+            sys.exit()
